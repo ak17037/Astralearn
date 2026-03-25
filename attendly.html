@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/attendly.css">
+    <link rel="stylesheet" href="css/pr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <div>
+            <h1 class="h1"><b>ASTRALEARN</b></h1>
+            <p>Welcome to the world of <span class="b">your Own</span></p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="left">
+            <div class="blog_1">
+                <img src="images/39110974.jpg" alt="" class="i">
+                <!-- <div class="firstBox" id="firstBox">
+                    <p>CLICK BELOW TO ACTIVATE YOUR TRACKER.</p>
+                    <button onclick="showAttendance()" class="viewBtn">VIEW ATTENDANCE</button>
+                </div> -->
+                <div class="firstBox" id="firstBox">
+                    <h2>WELCOME TO YOUR ATTENDANCE DASHBOARD</h2>
+                    <p class="subtitle">
+                        Hello there. Track your academic progress in each subject with ease.
+                    </p>
+                    <p class="info">Your results will be displayed here.</p>
+                    <button onclick="showAttendance()" class="viewBtn">START TRACKING PROGRESS +</button>
+                </div>
+                <div class="attendence">
+                    <h3><b>Attendance Percentage</b></h3>
+                    <!-- Button -->
+                    <table id="attendanceTable">
+                        <tr>
+                            <th>Subject</th>
+                            <th>Classes</th>
+                            <th>Classes Attended</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <!-- This row will be updated by JS -->
+                        <tr>
+                            <td id="sub">-</td>
+                            <td id="tot">-</td>
+                            <td id="att">-</td>
+                            <td id="per">-</td>
+                        </tr>
+                    </table>
+                    <button onclick="addAttendance()" class="entry">Enter Attendance</button>
+                    <button onclick="showAttendance()" class="hideBtn">Go Back</button>
+                </div>
+            </div>
+            <div class="blog_1">
+                <!-- <img src="images/shutterstock.jpg.png" alt="" class="i"> -->
+                <img src="images/to (1).jpg" alt="" class="i">
+                <div class="description">
+                    <h3 class="h3">TO-DO DASHBOARD</h3>
+                    <h4 class="h4">
+                        Organize your tasks, 
+                        <span class="p1">Stay productive every day</span>
+                    </h4>
+                    <p class="p2">
+                        Manage your daily tasks efficiently with a simple and intuitive to-do system. 
+                        Add tasks, track your progress, and stay focused on what truly matters. 
+                        Whether it's study goals, assignments, or personal work, keep everything organized 
+                        in one place and improve your productivity with ease.
+                    </p>
+                    <div class="grid_1">
+                        <div>
+                           <a href="ishant.html"><button class="b2"><b>OPEN TO-DO LIST →</b></button></a>
+                        </div>
+                        <p>tasks - <span class="white">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right left">
+            <div class="blog_1">
+                <img src="images/avatar_g.jpg" alt="" class="i">
+                <div class="description">
+                    <h3 class="h3">Hi, I'm Ashley Verstappen</h3>
+                    <p class="p2">
+                        A passionate student and aspiring web developer focused on building clean, 
+                        user-friendly web applications. I enjoy learning new technologies, solving problems, 
+                        and turning ideas into real projects.
+                    </p>
+                    <p class="p2">
+                        📚 Learning: Web Development, JavaScript <br>
+                        💻 Interests: Coding, UI Design, Productivity Tools <br>
+                        🎯 Goal: Becoming a full-stack developer <br>
+                        🌐 Sharing my journey through projects and blogs
+                    </p>
+                </div>
+            </div>
+            <div class="blog_1">
+                <div class="posts">
+                    <p class="o1">Student Expense Tracker</p>
+                    <button onclick="addExpense()" class="Expense">+ Add Expense</button>
+                    <div class="o">
+                        <img src="images/Screenshot 2026-03-24 182627.png" class="icons">
+                        <div>
+                            <p>Food</p>
+                            <p id="amt1">-</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="o">
+                        <img src="images/clothes.png" class="icons">
+                        <div>
+                            <p>Clothes</p>
+                            <p id="amt2">-</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="o">
+                        <img src="images/study.png" class="icons">
+                        <div>
+                            <p>Study</p>
+                            <p id="amt3">-</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="o">
+                        <img src="images/enteertainment.png" class="icons">
+                        <div>
+                            <p>Entertainment</p>
+                            <p id="amt4">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog_1">
+                <div class="t1">
+                    <p class="p4">Links</p>
+                </div>
+                <!-- <div class="t2">
+                    <button class="b3 b1">Travel</button><button class="b3 b1">New York</button><button class="b3 b1">London</button><button class="b3 b1">IKEA</button><button class="b3 b1">NORWAY</button><button class="b3 b1">DIY</button><button class="b3 b1">Ideas</button><button class="b3 b1">Baby</button><button class="b3 b1">family</button><button class="b3 b1">News</button><button class="b3 b1">Clothing</button><button class="b3 b1">Shopping</button><button class="b3 b1">Sports</button><button class="b3 b1">Games</button>   
+                </div> -->
+                <div class="t2">
+                    <a href="https://www.wikipedia.org/" target="_blank" class="b3 b1">Wikipedia</a>
+                    <a href="https://leetcode.com/" target="_blank" class="b3 b1">LeetCode</a>
+                    <a href="https://www.geeksforgeeks.org/" target="_blank" class="b3 b1">GeeksforGeeks</a>
+                    <a href="https://www.hackerrank.com/" target="_blank" class="b3 b1">HackerRank</a>
+                    <a href="https://codeforces.com/" target="_blank" class="b3 b1">Codeforces</a>
+                    <a href="https://stackoverflow.com/" target="_blank" class="b3 b1">Stack Overflow</a>
+                    <a href="https://github.com/" target="_blank" class="b3 b1">GitHub</a>
+                    <a href="https://www.w3schools.com/" target="_blank" class="b3 b1">W3Schools</a>
+                    <a href="https://developer.mozilla.org/" target="_blank" class="b3 b1">MDN Docs</a>
+                    <a href="https://www.freecodecamp.org/" target="_blank" class="b3 b1">freeCodeCamp</a>
+                    <a href="https://www.codechef.com/" target="_blank" class="b3 b1">CodeChef</a>
+                    <a href="https://www.topcoder.com/" target="_blank" class="b3 b1">TopCoder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footer_1">
+                <p style="margin-bottom: 15px;">co-powered by-</p>
+                <img src="assest/images/name_logo.png" alt="" class="f1">
+                <div class="sub_footer_1">
+                    <img src="assest/images/f1.jpg.png" alt="">
+                    <img src="assest/images/p.png" alt="">
+                    <img src="assest/images/cib_instagram.png" alt="">
+                </div>    
+            </div>
+            <div class="footer_2">
+                <P><strong class="h5">Coustomer</strong></p>
+                <ol>
+                    <li>Contact us</li>
+                    <li>Shipping & Delivery</li>
+                    <li>Returns & Exchanges</li>
+                    <li>Product Care</li>
+                    <li>FAQ</li>
+                </ol>
+            </div>
+            <div class="footer_2">
+                <P><strong class="h5">Customer</strong></P>
+                <ol>
+                    <li>Our Story</li>
+                    <li>Sustainability</li>
+                    <li>Craftsmanship</li>
+                    <li>Stockists</li>
+                    <li>Company, Legal, & GDPR</li>
+                </ol>
+                    
+            </div>
+            <div class="footer_4">
+                    <p><strong>Sign Up for Our Newsletter</strong></p>
+                    <div class="email">
+                        <input type="email" placeholder="Enter Email"> 
+                        <img src="images/right (1).png">
+                    </div>
+                    <p>Subscribe to our Newsletter for 10% off your first order</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/attendence.js"></script>
+</body>
+</html>
