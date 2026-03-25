@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Tasks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+ 
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fdf8f2;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 460px;
+  background: #fffcf8;
+  border-radius: 20px;
+  border: 1px solid #ede7df;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 1px solid #ede7df;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #2c2416;
+}
+
+.header p {
+  color: #9b8e82;
+  font-size: 14px;
+}
+
+/* Form area */
+.form-area {
+  padding: 20px;
+  background: #fdf8f2;
+  border-bottom: 1px solid #ede7df;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ede7df;
+  border-radius: 10px;
+}
+
+/* Button */
+.add-btn {
+  width: 100%;
+  padding: 10px;
+  background: #e07d3c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.add-btn:hover {
+  background: #c9682a;
+}
+
+/* Task list */
+.task {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ede7df;
+}
+
+.task:hover {
+  background: #fdfaf6;
+}
+
+/* Checkbox */
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Task title */
+.task-title {
+  font-size: 16px;
+  color: #2c2416;
+}
+
+/* Completed task */
+.task input[type="checkbox"]:checked + .task-title {
+  text-decoration: line-through;
+  color: #9b8e82;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+/* Different tags */
+.done {
+  background: #eaf4ef;
+  color: #3a7d5c;
+}
+
+.tomorrow {
+  background: #eef0fb;
+  color: #5766c9;
+}
+
+/* Empty message */
+.nudge {
+  text-align: center;
+  padding: 30px;
+  color: #9b8e82;
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+ 
+    <div class="header">
+      <h1>My Tasks</h1>
+      <p>Keep it simple. Get it done.</p>
+    </div>
+ 
+    <div class="form-area">
+      <form action="#" method="get" class="form-row">
+        <div class="inputs">
+          <input type="text" name="task" placeholder="What needs doing?" maxlength="80">
+          <input type="date" name="due">
+        </div>
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+    </div>
+ 
+    <ul class="tasks">
+      <li class="task">
+        <input type="checkbox">
+        <div class="task-body">
+          <div class="task-title">Review project deliverables</div>
+          <span class="tag">Today</span>
+        </div>
+      </li>
+      <li class="task">
+        <input type="checkbox" checked>
+        <div class="task-body">
+          <div class="task-title">Update client presentation</div>
+          <span class="tag done">Done</span>
+        </div>
+      </li>
+      <li class="task">
+        <input type="checkbox">
+        <div class="task-body">
+          <div class="task-title">Schedule team sync</div>
+          <span class="tag tomorrow">Tomorrow</span>
+        </div>
+      </li>
+    </ul>
+ 
+  </div>
+</body>
+</html>
